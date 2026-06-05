@@ -1,5 +1,5 @@
 # Anonymous Reviewer Release
-
+This paper has subbmited IEEE Interational Conference on Data Mining (ICDM 2026).
 This repository contains an anonymized reproduction-oriented implementation for the submitted method. It is intended to let reviewers run the main training pipeline without exposing the full internal experiment management code, exhaustive hyperparameter sweep files, logs, checkpoints, or exploratory variants.
 
 ## Contents
