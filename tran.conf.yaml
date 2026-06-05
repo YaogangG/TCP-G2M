@@ -1,0 +1,53 @@
+# Representative transductive configuration for reviewer-side reproducibility.
+# The full hyperparameter sweep is omitted from this anonymized release.
+global:
+  num_layers: 2
+  hidden_dim: 128
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  dropout_s: 0.5
+  dropout_t: 0.5
+  tau: 4.0
+  lamb: 0.5
+  max_epoch: 1500
+  use_ppr: 0
+  use_tc_ppr: 1
+  ppr_mode: concat
+  ppr_alpha: 0.2
+  ppr_k: 10
+  tc_beta: 0.2
+  tc_alpha: 0.2
+  tc_K: 10
+  lambda_mode: pcgrad
+  use_meta: 0
+  ablation_mode: 0
+
+cora:
+  MLP:
+    learning_rate: 0.01
+    dropout_t: 0.5
+
+citeseer:
+  MLP:
+    learning_rate: 0.01
+    dropout_t: 0.5
+
+pubmed:
+  MLP:
+    learning_rate: 0.01
+    dropout_t: 0.5
+
+chameleon:
+  MLP:
+    learning_rate: 0.01
+    dropout_t: 0.6
+
+romanempire:
+  MLP:
+    learning_rate: 0.01
+    dropout_t: 0.6
+
+arating:
+  MLP:
+    learning_rate: 0.01
+    dropout_t: 0.6
